@@ -1,0 +1,211 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.compass.hadoop</groupId>
+  <artifactId>hadoop-hive</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>hadoop-hive</name>
+  <build/>
+  
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	
+  	<org.apache.hive-version>0.13.0</org.apache.hive-version>
+  	<org.apache.hadoop-version>2.2.0</org.apache.hadoop-version>
+  </properties>
+  
+  <dependencies>
+  	<!-- Hive Query Language » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-exec</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Metastore » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-metastore</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Serde » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-serde</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Common » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-common</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Service » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-service</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive JDBC » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-jdbc</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Shims » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-shims</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive CLI » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-cli</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Contrib » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-contrib</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive HBase Handler » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-hbase-handler</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Storage API » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-storage-api</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Ant Utilities » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-ant</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Service RPC » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-service-rpc</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Beeline » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-beeline</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive HWI » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-hwi</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive TestUtils » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-testutils</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Llap Client » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-llap-client</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Llap Common » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-llap-common</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive ORC » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-orc</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Llap Tez » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-llap-tez</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Llap Server » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-llap-server</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Accumulo Handler » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-accumulo-handler</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive HPL/SQL » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-hplsql</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	    <type>pom</type>
+	</dependency>
+	<!-- Hive Llap External Client » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-llap-ext-client</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Spark Remote Client » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>spark-client</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	</dependency>
+	<!-- Hive Shims Aggregator » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-shims-aggregator</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	    <type>pom</type>
+	</dependency>
+	<!-- Hive Packaging » 2.1.0 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-packaging</artifactId>
+	    <version>${org.apache.hive-version}</version>
+	    <type>pom</type>
+	</dependency>
+	
+	<!-- org.apache.hadoop -->
+	<dependency>
+	    <groupId>org.apache.hadoop</groupId>
+	    <artifactId>hadoop-common</artifactId>
+	    <version>${org.apache.hadoop-version}</version>
+	</dependency>
+
+	<!-- Compile Dependencies -->
+	<!-- Hive Jdbc Handler » 0.8.1-wso2v7 -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+	    <artifactId>hive-jdbc-handler</artifactId>
+	    <version>0.8.1-wso2v7</version>
+	</dependency>
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	    <scope>test</scope>
+	</dependency>
+	
+  </dependencies>
+</project>
